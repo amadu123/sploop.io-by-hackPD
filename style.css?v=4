@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+/*
+
+KAWAK CHANGE 0.0.1
+
+*/
+
+.noselect {
+   pointer-events: none;
+}
+
+.select {
+    pointer-events: all;
+ }
+
+#game-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+}
+
+#disconnect{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color:#3c3b38;
+    z-index: 100;
+}
+
+#disconnect-reason{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#disconnect-reason a {
+    text-decoration: none; 
+    color: orange; 
+}
+
+#game-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #54643d;
+}
+
+/* 
+==============================================================
+==============================================================
+GLOBAL STYLING CLASSES
+==============================================================
+==============================================================
+*/
+
+.grid-3 {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3px;
+}
+
+.button {
+    outline: none;
+    border: 5px solid #313131;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #e9e9e9;
+    text-shadow: #313131 4px 0 0, #313131 3.87565px .989616px 0, #313131 3.51033px 1.9177px 0, #313131 2.92676px 2.72656px 0, #313131 2.16121px 3.36588px 0, #313131 1.26129px 3.79594px 0, #313131 .282949px 3.98998px 0, #313131 -.712984px 3.93594px 0, #313131 -1.66459px 3.63719px 0, #313131 -2.51269px 3.11229px 0, #313131 -3.20457px 2.39389px 0, #313131 -3.69721px 1.52664px 0, #313131 -3.95997px .56448px 0, #313131 -3.97652px -.432781px 0, #313131 -3.74583px -1.40313px 0, #313131 -3.28224px -2.28625px 0, #313131 -2.61457px -3.02721px 0, #313131 -1.78435px -3.57996px 0, #313131 -.843183px -3.91012px 0, #313131 .150409px -3.99717px 0, #313131 1.13465px -3.8357px 0, #313131 2.04834px -3.43574px 0, #313131 2.83468px -2.82216px 0, #313131 3.44477px -2.03312px 0, #313131 3.84068px -1.11766px 0, #313131 3.9978px -.132717px 0;
+}
+
+/* 
+==============================================================
+==============================================================
+BUTTON STYLES
+==============================================================
+==============================================================
+*/
+
+.help-styles {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #01595b;
+    box-shadow: inset 0 -4px 0 #064a49;
+}
+
+#play {
+    background-color: #97ba42;
+    box-shadow: inset 0 -4px 0 #819937;
+    width: 39.1%;
+    padding: 7px;
+    font-size: 20px;
+}
+
+/* 
+==============================================================
+==============================================================
+NAVBARS AND CERTAIN CORNER NAVBARS
+==============================================================
+==============================================================
+*/
+
+.side-nav {
+    position: absolute;
+    width: 10%;
+}
+
+
+#side-nav-left {
+    left: 0px;
+    display: flex;
+    width: 235px;
+    flex-wrap: wrap;
+    z-index: 21;
+    transform-origin: top right;
+    transition: opacity 200ms;
+}
+
+#side-nav-left img{
+    width: 200px;
+}
+
+#side-nav-right {
+    right: 0px;
+    display: flex;
+
+    width: 235px;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 21;
+    transform-origin: top right;
+    transition: opacity 200ms;
+}
+
+#side-nav-right .social {
+    width: 25%;
+    margin: 2.5px;
+}
+
+#side-nav-right .button {
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*
+GAME LOADER
+*/
+
+.spinner-parent{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.spinner {
+    max-width: 30vmin;
+    height: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* 
+==============================================================
+==============================================================
+AD MENUS
+==============================================================
+==============================================================
+*/
+
+.left-xxx {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    transform: translateY(-50%);
+    background-color: #f1ece1;
+    height: 280px;
+    width: 320px;
+    border: 5px solid #313131;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 -6px 0 #dbc2af;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-xxx {
+    position: absolute;
+    left: 60%;
+    top: 70%;
+    transform: translateY(-50%);
+    background-color: #f1ece1;
+    height: 280px;
+    width: 320px;
+    border: 5px solid #313131;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 -6px 0 #dbc2af;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+==============================================================
+==============================================================
+GAME MENU
+==============================================================
+==============================================================
+*/
+
+.game-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-menu .game-name {
+    padding: 6px;
+    background-color: #f1ece1;
+    width: 100%;
+    outline: none;
+    border: 5px solid #313131;
+    border-radius: 10px;
+    box-shadow: inset 0 -4px 0 #dbc2af;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+.game-menu .game-name::placeholder {
+    font-weight: bold;
+    color: #313131;
+    font-size: 20px;
+}
+
+.game-menu .select-servers {
+    outline: none;
+    border: 5px solid #313131;
+    padding: 7px;
+    border-radius: 10px;
+    width: 60%;
+    font-size: 20px;
+    background-color: #01595b;
+    box-shadow: inset 0 -4px 0 #064a49;
+    color: white;
+    font-weight: bold;
+}
+
+/* 
+==============================================================
+==============================================================
+BOTTOM NAV
+==============================================================
+==============================================================
+*/
+
+.bottom-nav {
+    position: absolute;
+    display: flex;
+    width: 93%;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-nav .items {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.bottom-nav .items .item {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    min-width: 120px;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.bottom-nav .items .item .link {
+    text-decoration: none;
+    color: white;
+}
