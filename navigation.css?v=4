@@ -1,0 +1,182 @@
+
+:root {
+
+    /* Colors */
+    --dark-black: #141414;
+
+    /* Top Bar */
+    --top-bar-background-color: rgba(91, 109, 51, .9);
+    --top-bar-box-shadow: inset 0 -6px var(--dark-black);
+
+    /* Borders */
+    --border: 5px solid var(--dark-black);
+    --border-radius: 10px;
+
+}
+
+/* Top Bar */
+
+.top-bar {
+
+    width: 100%;
+    height: 13vh;
+    background-color: var(--top-bar-background-color);
+    box-shadow: var(--top-bar-box-shadow);
+    align-items: center;
+
+}
+
+.top-bar #collection {
+
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-bar .lostworld_logo {
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+
+.top-bar .lostworld_banner {
+    width: 400px;
+    height: 100px;
+}
+
+/* Side Navigations */
+
+.side-nav {
+    position: absolute;
+    width: 10%;
+}
+
+#side-nav-right {
+    right: 0;
+    text-align: left;
+    width: 250px;
+    padding-right: 10px;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-nav-right * {
+    margin-top: 5px;
+}
+
+.side-nav .socials {
+    margin-top: 15px;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3px;
+}
+
+.side-nav .socials .social {
+    outline: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Game Navigation */
+
+.advert-main-left{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    margin-right: auto;
+    overflow: hidden;
+    float:left;
+    margin: 0;
+    padding: 0;
+}
+
+.game-nav {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-nav .forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.game-nav .forms .username {
+    
+    padding: 6px;
+    outline: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: #f1ece1;
+    box-shadow: inset 0 -4px 0 #dbc2af;
+    width: 95%;
+    text-align: center;
+    font-weight: bold;
+    color: #141414;
+    font-size: 20px;
+}
+
+.game-nav .forms .username::placeholder {
+    font-weight: bold;
+    color: #141414;
+}
+
+.game-nav .forms hr {
+    outline: none;
+    border: none;
+    height: 5px;
+    border-radius: var(--border-radius);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #141414;
+}
+
+/* Bottom Navigation */
+
+.bottom-nav {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-nav .items {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.bottom-nav .items .item {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    min-width: 120px;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.bottom-nav .items .item .link {
+    text-decoration: none;
+    color: white;
+}
