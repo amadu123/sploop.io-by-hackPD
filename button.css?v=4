@@ -1,0 +1,115 @@
+
+:root {
+
+    /* Colors */
+    --dark-black: #313131;
+    --dark-white: #e9e9e9;
+
+    /* Help Section */
+    --help-background: #01595b;
+    --help-shadow: inset 0 -4px 0 #064a49;
+
+    /* Borders */
+    --border: 5px solid var(--dark-black);
+    --border-radius: 10px;
+
+}
+
+/* Main button template
+this will be overriding other attributes, so it is plain for now
+*/
+
+.button {
+
+    outline: none;
+    border: 5px solid var(--dark-black);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: var(--dark-black) 4px 0px 0px, var(--dark-black) 3.87565px 0.989616px 0px, var(--dark-black) 3.51033px 1.9177px 0px, var(--dark-black) 2.92676px 2.72656px 0px, var(--dark-black) 2.16121px 3.36588px 0px, var(--dark-black) 1.26129px 3.79594px 0px, var(--dark-black) 0.282949px 3.98998px 0px, var(--dark-black) -0.712984px 3.93594px 0px, var(--dark-black) -1.66459px 3.63719px 0px, var(--dark-black) -2.51269px 3.11229px 0px, var(--dark-black) -3.20457px 2.39389px 0px, var(--dark-black) -3.69721px 1.52664px 0px, var(--dark-black) -3.95997px 0.56448px 0px, var(--dark-black) -3.97652px -0.432781px 0px, var(--dark-black) -3.74583px -1.40313px 0px, var(--dark-black) -3.28224px -2.28625px 0px, var(--dark-black) -2.61457px -3.02721px 0px, var(--dark-black) -1.78435px -3.57996px 0px, var(--dark-black) -0.843183px -3.91012px 0px, var(--dark-black) 0.150409px -3.99717px 0px, var(--dark-black) 1.13465px -3.8357px 0px, var(--dark-black) 2.04834px -3.43574px 0px, var(--dark-black) 2.83468px -2.82216px 0px, var(--dark-black) 3.44477px -2.03312px 0px, var(--dark-black) 3.84068px -1.11766px 0px, var(--dark-black) 3.9978px -0.132717px 0px;
+    color: var(--dark-white);
+
+}
+
+/* Custom buttons */
+
+.site-buttons{
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--help-background);
+    box-shadow: var(--help-shadow);
+    width: 100%;
+}
+
+.site-buttons:hover{
+    background-color: #064a49;
+    box-shadow: inset 0 -4px 0 var(--help-background);
+}
+
+#select-server {
+    background-color: #01595b;
+    background-image: url('../assets/lostworld_logo.png');
+    background-repeat: no-repeat;
+    background-position: 143%;
+    background-position-y: -50px;
+    box-shadow: inset 0 -4px 0 #074645;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#select-server:hover {
+    background-color: #074645;
+    box-shadow: inset 0 -4px 0 #01595b;
+}
+
+#select-server:focus {
+    background-color: #074645;
+    box-shadow: inset 0 -4px 0 #01595b;
+}
+
+#challenges {
+    background-color: #efbc61;
+    background-image: url('../assets/lostworld_trophy.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -15px;
+    background-size: 100px 80px;
+    box-shadow: inset 0 -4px 0 #9c7031;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#challenges:hover {
+    background-color: #9c7031;
+    box-shadow: inset 0 -4px 0 #efbc61;
+}
+
+#shop {
+    background-color: #debf31;
+    box-shadow: inset 0 -4px 0 #e29626;
+    width: 40%;
+    margin-right: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#shop:hover {
+    background-color: #e29626;
+    box-shadow: inset 0 -4px 0 #debf31;
+}
+
+#pets {
+    background-color: #01595b;
+    box-shadow: inset 0 -4px 0 #094340;
+    width: 60%;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#pets:hover {
+    background-color: #094340;
+    box-shadow: inset 0 -4px 0 #01595b;
+}
