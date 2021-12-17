@@ -1,0 +1,104 @@
+
+.select-server-dropdown {
+    width: 60%;
+    position: relative;
+    display: inline-block;
+}
+
+.select-server-dropdown .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.select-server-dropdown .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.select-server-dropdown .servers {
+    position: absolute;
+    background-color: #01595b;
+    width: 95%;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 5px solid #141414;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.select-server-dropdown .show {
+    display: block;
+}
+
+.select-server-dropdown .section {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(244, 235, 228);
+    font-weight: bold;
+    background-color: #073635;
+    box-shadow: inset 0 -4px 0 #074645;
+    padding: 5px;
+    width: 100%;
+}
+
+.select-server-dropdown .server-section {
+    padding: 10px;
+}
+
+.select-server-dropdown .servers .server-section .server {
+    padding: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.select-server-dropdown .servers .server-section .server:hover {
+    background-color: #074645;
+}
+
+.select-server-dropdown .servers .server-section .server .name {
+    color: rgb(244, 235, 228);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.select-server-dropdown .servers .server-section .server .player-count {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(244, 235, 228);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.select-server-dropdown .servers::-webkit-scrollbar {
+    width: 7px;
+}
+
+.select-server-dropdown .servers::-webkit-scrollbar-track {
+    background-color: #073635;
+    height: 80%;
+}
+
+.select-server-dropdown .servers::-webkit-scrollbar-thumb {
+    background-color: #141414;
+    border-radius: 2px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+} */
