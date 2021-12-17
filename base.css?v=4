@@ -1,0 +1,60 @@
+/* Monseratt Black */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+:root {
+
+    /* Colors */
+    --dark-black: #141414;
+}
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #81aa4a;
+}
+*/
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#outline {
+    text-shadow: var(--dark-black) 5px 0px 0px, 
+    var(--dark-black) 4px 1px 0px, 
+    var(--dark-black) 4px 2px 0px,
+    var(--dark-black) 3px 3px 0px, 
+    var(--dark-black) 2px 3px 0px, 
+    var(--dark-black) 1px 4px 0px, 
+    var(--dark-black) 0px 4px 0px, 
+    var(--dark-black) -1px 4px 0px, 
+    var(--dark-black) -2px 4px 0px, 
+    var(--dark-black) -3px 3px 0px, 
+    var(--dark-black) -3px 2px 0px, 
+    var(--dark-black) -4px 2px 0px, 
+    var(--dark-black) -4px 1px 0px, 
+    var(--dark-black) -4px -0px 0px, 
+    var(--dark-black) -4px -1px 0px, 
+    var(--dark-black) -3px -2px 0px, 
+    var(--dark-black) -2px -3px 0px, 
+    var(--dark-black) -2px -4px 0px, 
+    var(--dark-black) -1px -4px 0px, 
+    var(--dark-black) 0px -4px 0px, 
+    var(--dark-black) 1px -4px 0px, 
+    var(--dark-black) 2px -3px 0px, 
+    var(--dark-black) 3px -3px 0px, 
+    var(--dark-black) 3px -2px 0px, 
+    var(--dark-black) 4px -1px 0px, 
+    var(--dark-black) 4px 0px 0px;
+}
